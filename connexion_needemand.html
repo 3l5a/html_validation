@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connexion Needemand</title>
+    <style>
+      input[type="password"]:valid {
+        background-color: #43ec43;
+      }
+      input[type="email"]:valid {
+        background-color: #43ec43;
+      }
+      input[type="password"]:invalid {
+        background-color: #f04f4f;
+      }
+      input[type="email"]:invalid {
+        background-color: #f04f4f;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="admail">Votre email :</label>
+        <input
+          type="email"
+          placeholder="nom@needemand.com"
+          name=""
+          id="admail"
+          required
+          pattern=".+@needemand\.com"
+        />
+      </div>
+      <div>
+        <label for="mdp">Mot de passe :</label>
+        <input
+          type="password"
+          name=""
+          id="mdp"
+          required
+          minlength="6"
+          maxlength="8"
+          pattern="^(?=.*\d)(?=.*\w)(?=.*[a-zA-Z]).{6,8}$" />
+      </div>
+      <div>
+        <input type="submit" value="C'est parti" />
+        <input type="reset" name="" id="" value="Recommencer" />
+      </div>
+    </form>
+  </body>
+</html>
